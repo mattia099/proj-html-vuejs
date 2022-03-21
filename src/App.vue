@@ -20,8 +20,7 @@ export default {
 @import '~@fortawesome/fontawesome-free/css/all.css';
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-size: 15px;
 }
 *{
   margin: 0;
@@ -33,5 +32,28 @@ ul{
   list-style-type: none;
   padding-left: 0;
   margin-bottom: 0;
+}
+
+.main-color{
+  color:white;
+  background-color: #038483;
+  text-transform: uppercase;
+  font-weight: 700;
+  &:hover{
+    background-color: #39c4c6;
+    color: white;
+  }
+}
+
+.second-color{
+  color:white;
+  background-color: transparent;
+  text-transform: uppercase;
+  font-weight: 700;
+  border: 1px solid #038483;
+  &:hover{
+    background-color: #038483;
+    color: white;
+  }
 }
 </style>
