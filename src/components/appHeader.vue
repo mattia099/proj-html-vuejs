@@ -1,7 +1,7 @@
 <template>
-  <header>
+  <header class="d-flex flex-column">
     <smallBannerContacts />
-    <div class="hero-section">
+    <div class="hero-section flex-grow-1">
       <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
         <div class="container text-uppercase">
           <a class="navbar-brand fw-bold" href="#"><span class="logo">N e x</span> G e n</a>
@@ -60,7 +60,7 @@ export default{
 
 <style scoped lang="scss">
   header{
-    height: calc(100vh - 40px);
+    height: 100vh;
     color: white;
     .hero-section{
       height: 100%;

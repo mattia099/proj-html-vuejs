@@ -1,16 +1,18 @@
 <template>
   <div id="app">
     <appHeader />
+    <mainCharacteristic />
   </div>
 </template>
 
 <script>
-import appHeader from './components/appHeader.vue'
-
+import appHeader from './components/appHeader.vue';
+import mainCharacteristic from './components/mainCharacteristic.vue';
 export default {
   name: 'App',
   components: {
     appHeader,
+    mainCharacteristic
   }
 }
 </script>

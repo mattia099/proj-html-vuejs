@@ -25,6 +25,7 @@ export default {
 
 <style scoperd lang="scss">
   section{
+    height: 40px;
     background-color: #24333d;
     color: white;
   }
