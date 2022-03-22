@@ -42,9 +42,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+  @import '../assets/scss/mixins.scss';
   section{
     background-color: #e3e7df;
-    color: #1e2223;
+    color: $canvas;
     height: auto;
     .card{
       padding: 40px 30px;

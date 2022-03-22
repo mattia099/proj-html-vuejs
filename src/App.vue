@@ -30,9 +30,10 @@ export default {
 @import "bootstrap/scss/bootstrap";
 @import '~@fortawesome/fontawesome-free/css/all.css';
 @import "./assets/scss/mixins.scss";
+
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
   font-size: 15px;
+  font-family: 'Arial Narrow Bold', sans-serif
 }
 
 *{

@@ -56,7 +56,7 @@ export default {
 <style lang="scss" scoped>
   @import "../assets/scss/mixins.scss";
   section{
-    color: $shark;
+    color: $canvas;
     .row{
     --bs-gutter-x: 0;
     }
