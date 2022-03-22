@@ -49,6 +49,9 @@ export default {
     .card{
       padding: 40px 30px;
       border-radius: 10px;
+      &:hover{
+        transform: translateY(-10px);
+      }
       .icon-container{
         border-radius: 50%;
         background-color: rgba($color: #39c4c6, $alpha: 0.2);

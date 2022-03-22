@@ -23,10 +23,12 @@ export default {
 }
 </script>
 
-<style scoperd lang="scss">
+<style scoped lang="scss">
+  @import "../assets/scss/mixins.scss";
   section{
+    display: none;
     height: 40px;
-    background-color: #24333d;
+    background-color: $ebonyClay;
     color: white;
   }
 </style>

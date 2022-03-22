@@ -1,6 +1,6 @@
 <template>
   <header class="d-flex flex-column">
-    <smallBannerContacts />
+    <smallBannerContacts class="d-lg-block" />
     <div class="hero-section flex-grow-1">
       <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
         <div class="container text-uppercase">
@@ -34,7 +34,7 @@
       </nav>
 
       <div class="hero-section_content">
-        <h1>Lead ~ <span class="logo">Customer</span></h1>
+        <h1 class="big-title">Lead ~ <span class="logo second">Customer</span></h1>
         <p>Succesful strategies require data analysis, creativity and costumer focus, taking advantage of the latest technologies to offer excellent services</p>
         <button class="btn main-color mx-2">Get in Touch</button>
         <button class="btn second-color mx-2">Read More</button>
@@ -72,16 +72,7 @@ export default{
         color: white !important;
         font-weight: 700;
       }
-      .logo{
-        color:#39c4c6;
-        background: rgba($color: #038483, $alpha: 0.2);
-        padding-left: 20px;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        padding-right: 5px;
-        border-top-left-radius: 50px;
-        border-bottom-left-radius: 50px;
-      }
+      
       .hero-section_content{
         position: absolute;
         top: 50%;
@@ -89,12 +80,7 @@ export default{
         transform: translate( -50%, -50% );
         max-width: 600px;
         text-align: center;
-        .logo{
-          border-top-left-radius: 0 !important;
-          border-bottom-left-radius: 0 !important;
-          padding: 10px 10px;
-          color: white;
-        }
+        
       }
       &::before{
         content: '';

@@ -2,17 +2,26 @@
   <div id="app">
     <appHeader />
     <mainCharacteristic />
+    <theCompany />
+    <businessArea />
+    <pricingTable />
   </div>
 </template>
 
 <script>
 import appHeader from './components/appHeader.vue';
 import mainCharacteristic from './components/mainCharacteristic.vue';
+import theCompany from './components/theCompany.vue';
+import businessArea from './components/businessArea.vue';
+import pricingTable from './components/pricingTable.vue';
 export default {
   name: 'App',
   components: {
     appHeader,
-    mainCharacteristic
+    mainCharacteristic,
+    theCompany,
+    businessArea,
+    pricingTable,
   }
 }
 </script>
@@ -20,42 +29,29 @@ export default {
 <style lang="scss">
 @import "bootstrap/scss/bootstrap";
 @import '~@fortawesome/fontawesome-free/css/all.css';
+@import "./assets/scss/mixins.scss";
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   font-size: 15px;
 }
+
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
+img{
+  max-width: 100%;
+}
 ul{
   list-style-type: none;
   padding-left: 0;
   margin-bottom: 0;
 }
 
-.main-color{
-  color:white;
-  background-color: #038483;
-  text-transform: uppercase;
-  font-weight: 700;
-  &:hover{
-    background-color: #39c4c6;
-    color: white;
-  }
+
+figure{
+  margin: 0;
 }
 
-.second-color{
-  color:white;
-  background-color: transparent;
-  text-transform: uppercase;
-  font-weight: 700;
-  border: 1px solid #038483;
-  &:hover{
-    background-color: #038483;
-    color: white;
-  }
-}
 </style>
