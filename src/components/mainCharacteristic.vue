@@ -1,8 +1,8 @@
 <template>
   <section>
     <div class="container">
-      <div class="row py-5">
-        <div class="col">
+      <div class="row py-5 gy-3">
+        <div class="col-12 col-md-6 col-lg-4">
           <div class="card">
             <div class="icon-container align-self-start">
               <i class="fas fa-user-friends"></i>
@@ -11,7 +11,7 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis hic suscipit amet. Quasi, ipsum. Lorem, ipsum dolor.</p>
           </div>
         </div>
-        <div class="col">
+        <div class="col-12 col-md-6 col-lg-4">
           <div class="card">
             <div class="icon-container align-self-start">
               <i class="fas fa-chart-pie"></i>
@@ -20,7 +20,7 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur inventore minus nam nemo laboriosam commodi?</p>
           </div>
           </div>
-        <div class="col">
+        <div class="col-12 col-md-6 col-lg-4">
           <div class="card">
             <div class="icon-container align-self-start">
               <i class="fas fa-tachometer-alt"></i>

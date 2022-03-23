@@ -7,6 +7,8 @@
     <pricingTable />
     <latestNews />
     <newsLetter />
+    <sendMessage />
+    <appFooter />
   </div>
 </template>
 
@@ -18,6 +20,8 @@ import businessArea from './components/businessArea.vue';
 import pricingTable from './components/pricingTable.vue';
 import latestNews from './components/latestNews.vue';
 import newsLetter from './components/newsLetter.vue'
+import sendMessage from './components/sendMessage.vue'
+import appFooter from './components/appFooter.vue'
 export default {
   name: 'App',
   components: {
@@ -28,6 +32,8 @@ export default {
     pricingTable,
     latestNews,
     newsLetter,
+    sendMessage,
+    appFooter
   }
 }
 </script>

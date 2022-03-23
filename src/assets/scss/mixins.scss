@@ -20,6 +20,7 @@ $canvas: #21333E;
   background-color: $blueLagoon;
   text-transform: uppercase;
   font-weight: 700;
+  padding: 6px 16px;
   &:hover{
     background-color: $pelorous;
     color: white;
@@ -32,6 +33,7 @@ $canvas: #21333E;
   text-transform: uppercase;
   font-weight: 700;
   border: 1px solid $blueLagoon;
+  padding: 6px 16px;
   &:hover{
     background-color: $pelorous;
     color: white;
