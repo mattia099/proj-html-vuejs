@@ -47,13 +47,13 @@
               </div>
               <p class="lagoon">+1 (305) 1234-5678</p>
             </div>
-             <div class="col-12 d-flex align-items-center gap-2">
+            <div class="col-12 d-flex align-items-center gap-2">
               <div class="icon-container">
                 <i class="fas fa-envelope"></i>
               </div>
               <p class="lagoon">hello@example.com</p>
             </div>
-             <div class="col-12 d-flex align-items-center gap-2">
+            <div class="col-12 d-flex align-items-center gap-2">
               <div class="icon-container">
                 <i class="fas fa-map-marker-alt"></i>
               </div>
