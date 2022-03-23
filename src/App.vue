@@ -5,6 +5,8 @@
     <theCompany />
     <businessArea />
     <pricingTable />
+    <latestNews />
+    <newsLetter />
   </div>
 </template>
 
@@ -14,6 +16,8 @@ import mainCharacteristic from './components/mainCharacteristic.vue';
 import theCompany from './components/theCompany.vue';
 import businessArea from './components/businessArea.vue';
 import pricingTable from './components/pricingTable.vue';
+import latestNews from './components/latestNews.vue';
+import newsLetter from './components/newsLetter.vue'
 export default {
   name: 'App',
   components: {
@@ -22,6 +26,8 @@ export default {
     theCompany,
     businessArea,
     pricingTable,
+    latestNews,
+    newsLetter,
   }
 }
 </script>
@@ -49,10 +55,11 @@ ul{
   padding-left: 0;
   margin-bottom: 0;
 }
-
-
 figure{
   margin: 0;
+}
+h4{
+    margin-bottom: 0;
 }
 
 </style>
