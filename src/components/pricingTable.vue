@@ -5,8 +5,10 @@
         <div class="col-12"><h4 class="xsmall-title text-center text-uppercase">Monthly plans</h4></div>
         <div class="col-12"><h2 class="medium-title text-center"><span class="logo second">Pricing</span> Table</h2></div>
         <div class="col-md-6 offset-md-3"><p class="sub-text text-center">We can help you deliver and execute your future, wherever you compete, using the latest technologies, from strategy development to implementation.</p></div>
+        
         <div class="col-12 col-md-6 col-lg-4">
           <div class="card-item d-flex flex-column align-items-center gap-2">
+            <i class="fas fa-arrow-right"></i>
             <i class="fas fa-rocket"></i>
             <h4 class="card_title">Standard</h4>
             <p class="card_small-text">$<span class="card_price">490</span>/mo</p>
@@ -19,8 +21,10 @@
             </ul>
           </div>
         </div>
-         <div class="col-12 col-md-6 col-lg-4">
+        
+        <div class="col-12 col-md-6 col-lg-4">
           <div class="card-item d-flex flex-column align-items-center gap-2">
+            <i class="fas fa-arrow-right"></i>
             <i class="fas fa-briefcase"></i>
             <h4 class="card_title">Professional</h4>
             <p class="card_small-text">$<span class="card_price">890</span>/mo</p>
@@ -36,6 +40,7 @@
         </div>
          <div class="col-12 col-md-6 col-lg-4">
           <div class="card-item d-flex flex-column align-items-center gap-2">
+            <i class="fas fa-arrow-right"></i>
             <i class="far fa-gem"></i>
             <h4 class="card_title">Ultimate</h4>
             <p class="card_small-text">$<span class="card_price">1.390</span>/mo</p>
@@ -56,7 +61,15 @@
 
 <script>
 export default {
-
+  data : function(){
+    return{
+      cards : [
+        {
+          title : '',
+        },
+      ]
+    }
+  }
 }
 </script>
 
@@ -94,6 +107,17 @@ export default {
       i{
         font-size: 30px;
         color: $blueLagoon;
+      }
+      i:first-child{
+        font-size: 25px;
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        display: none
+      }
+
+      &:hover i:first-child{
+        display: block;
       }
       .card_title{
         font-weight: 700;

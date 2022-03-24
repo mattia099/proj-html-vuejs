@@ -1,8 +1,8 @@
 <template>
   <footer>
     <div class="container py-5">
-      <div class="row py-5">
-        <div class="col-3">
+      <div class="row py-5 gy-4">
+        <div class="col-12 col-lg-3 py-3">
           <div class="row gy-4">
             <div class="col-12">
               <h4 class="fw-bold text-uppercase mb-3"><span class="logo">N e x</span> G e n</h4>
@@ -27,7 +27,7 @@
             </div>
           </div>
         </div>
-        <div class="col-3">
+        <div class="col-12 col-md-4 col-lg-3">
           <div class="card-item p-4">
             <h3>About</h3>
             <ul class="sub-text py-3">
@@ -40,7 +40,7 @@
             </ul>
           </div>
         </div>
-        <div class="col-3">
+        <div class="col-12 col-md-4 col-lg-3">
           <div class="card-item p-4">
             <h3>Services</h3>
             <ul class="sub-text py-3">
@@ -53,7 +53,7 @@
             </ul>
           </div>
         </div>
-        <div class="col-3">
+        <div class="col-12 col-md-4 col-lg-3">
           <div class="card-item p-4">
             <h3>Support</h3>
             <ul class="sub-text py-3">
