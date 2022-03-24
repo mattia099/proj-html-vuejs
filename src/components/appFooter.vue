@@ -27,47 +27,22 @@
             </div>
           </div>
         </div>
-        <div class="col-12 col-md-4 col-lg-3">
+        <div class="col-12 col-md-4 col-lg-3" v-for="(element,index) in cards" :key="index">
           <div class="card-item p-4">
-            <h3>About</h3>
+            <h3>{{element.title}}</h3>
             <ul class="sub-text py-3">
-              <li><i class="fa-solid fa-angle-right"></i><span>The Company</span></li>
-              <li><i class="fa-solid fa-angle-right"></i><span>The Company</span></li>
-              <li><i class="fa-solid fa-angle-right"></i><span>The Company</span></li>
-              <li><i class="fa-solid fa-angle-right"></i><span>The Company</span></li>
-              <li><i class="fa-solid fa-angle-right"></i><span>The Company</span></li>
-              <li><i class="fa-solid fa-angle-right"></i><span>The Company</span></li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-12 col-md-4 col-lg-3">
-          <div class="card-item p-4">
-            <h3>Services</h3>
-            <ul class="sub-text py-3">
-              <li><i class="fa-solid fa-angle-right"></i><span>The Company</span></li>
-              <li><i class="fa-solid fa-angle-right"></i><span>The Company</span></li>
-              <li><i class="fa-solid fa-angle-right"></i><span>The Company</span></li>
-              <li><i class="fa-solid fa-angle-right"></i><span>The Company</span></li>
-              <li><i class="fa-solid fa-angle-right"></i><span>The Company</span></li>
-              <li><i class="fa-solid fa-angle-right"></i><span>The Company</span></li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-12 col-md-4 col-lg-3">
-          <div class="card-item p-4">
-            <h3>Support</h3>
-            <ul class="sub-text py-3">
-              <li><i class="fa-solid fa-angle-right"></i><span>The Company</span></li>
-              <li><i class="fa-solid fa-angle-right"></i><span>The Company</span></li>
-              <li><i class="fa-solid fa-angle-right"></i><span>The Company</span></li>
-              <li><i class="fa-solid fa-angle-right"></i><span>The Company</span></li>
-              <li><i class="fa-solid fa-angle-right"></i><span>The Company</span></li>
-              <li><i class="fa-solid fa-angle-right"></i><span>The Company</span></li>
+              <li><i class="fa-solid fa-angle-right"></i><span>lorem</span></li>
+              <li><i class="fa-solid fa-angle-right"></i><span>lorem</span></li>
+              <li><i class="fa-solid fa-angle-right"></i><span>lorem</span></li>
+              <li><i class="fa-solid fa-angle-right"></i><span>lorem</span></li>
+              <li><i class="fa-solid fa-angle-right"></i><span>lorem</span></li>
+              <li><i class="fa-solid fa-angle-right"></i><span>lorem</span></li>
             </ul>
           </div>
         </div>
       </div>
     </div>
+    
     <div class="post-footer">
       <div class="container">
         <div class="row py-4">
@@ -85,7 +60,21 @@
 
 <script>
 export default {
-
+  data : function(){
+    return{
+      cards : [
+        {
+          title : 'About',
+        },
+        {
+          title : 'Services'
+        },
+        {
+          title : 'Support'
+        }
+      ]
+    }
+  }
 }
 </script>
 
