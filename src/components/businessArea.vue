@@ -8,61 +8,16 @@
         <div class="col-3 text-end"><button class="btn second-color">See all</button></div>
       </div>  
     
-
       <div class="row g-4">
-        <div class="col-12 col-md-6 col-lg-4">
+        <div class="col-12 col-md-6 col-lg-4" v-for="(element,index) in cards" :key="index">
           <div class="card-item d-flex flex-column g-5">
-            <i class="fas fa-network-wired"></i>
-            <h4>Audit e Assurance</h4>
-            <p class="sub-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <i :class="element.icon"></i>
+            <h4>{{element.title}}</h4>
+            <p class="sub-text">{{element.description}}</p>
             <button class="btn second-color align-self-start">Read More</button>
           </div>
         </div>
 
-        <div class="col-12 col-md-6 col-lg-4">
-          <div class="card-item d-flex flex-column g-5">
-            <i class="fas fa-briefcase"></i>
-            <h4>Financial Advisory</h4>
-            <p class="sub-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <button class="btn second-color align-self-start">Read More</button>
-          </div>
-        </div>
-
-        <div class="col-12 col-md-6 col-lg-4">
-          <div class="card-item d-flex flex-column g-5">
-            <i class="fas fa-chart-bar"></i>
-            <h4>Analytics and MeA</h4>
-            <p class="sub-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <button class="btn second-color align-self-start">Read More</button>
-          </div>
-        </div>
-
-        <div class="col-12 col-md-6 col-lg-4">
-          <div class="card-item d-flex flex-column g-5">
-            <i class="fas fa-plane"></i>
-            <h4>Middle Marketing</h4>
-            <p class="sub-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <button class="btn second-color align-self-start">Read More</button>
-          </div>
-        </div>
-
-        <div class="col-12 col-md-6 col-lg-4">
-          <div class="card-item d-flex flex-column g-5">
-            <i class="fas fa-globe-americas"></i>
-            <h4>Legal Consulting</h4>
-            <p class="sub-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <button class="btn second-color align-self-start">Read More</button>
-          </div>
-        </div>
-
-        <div class="col-12 col-md-6 col-lg-4">
-          <div class="card-item d-flex flex-column g-5">
-            <i class="far fa-folder"></i>
-            <h4>Regulatory Risk</h4>
-            <p class="sub-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <button class="btn second-color align-self-start">Read More</button>
-          </div>
-        </div>
       </div>
       
       
@@ -72,7 +27,42 @@
 
 <script>
 export default {
-
+  data : function(){
+    return{
+      cards :[
+        {
+          title : 'Audit e Assurance',
+          description : 'Lorem, ipsum dolor sit amet consectetur adipisicing elit.',
+          icon : 'fas fa-network-wired'
+        },
+        {
+          title : 'Financial Advisory',
+          description : 'Lorem, ipsum dolor sit amet consectetur adipisicing elit.',
+          icon : 'fas fa-briefcase'
+        },
+        {
+          title : 'Analytics and MeA',
+          description : 'Lorem, ipsum dolor sit amet consectetur adipisicing elit.',
+          icon : 'fas fa-chart-bar'
+        },
+        {
+          title : 'Middle Marketing',
+          description : 'Lorem, ipsum dolor sit amet consectetur adipisicing elit.',
+          icon : 'fas fa-plane'
+        },
+        {
+          title : 'Legal Consulting',
+          description : 'Lorem, ipsum dolor sit amet consectetur adipisicing elit.',
+          icon : 'fas fa-globe-americas'
+        },
+        {
+          title : 'Regulatory Risk',
+          description : 'Lorem, ipsum dolor sit amet consectetur adipisicing elit.',
+          icon : 'far fa-folder'
+        }
+      ]
+    }
+  }
 }
 </script>
 

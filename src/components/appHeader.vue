@@ -10,20 +10,8 @@
           </button>
           <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
             <ul class="navbar-nav gap-3">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Services</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Blog</a>
+              <li class="nav-item" v-for="( element,index ) in link" :key="index">
+                <a class="nav-link"  href="#">{{ element }}</a>
               </li>
               <li class="nav-item">
                 <button class="btn main-color">Get in Touch</button>
@@ -53,6 +41,12 @@ export default{
   components: { 
     smallBannerContacts,
   },
+  
+  data : function(){
+    return{
+      link : [ 'Home', 'About', 'Services', 'Pricing', 'Blog']
+    }
+  }
 }  
 
 </script>

@@ -1,43 +1,47 @@
 <template>
   <section>
     <div class="container">
-      <div class="row py-5 gy-3">
-        <div class="col-12 col-md-6 col-lg-4">
+      <div class="row py-5 gy-3" >
+        
+        <div class="col-12 col-md-6 col-lg-4" v-for="(element,index) in cards" :key="index">
           <div class="card">
             <div class="icon-container align-self-start">
-              <i class="fas fa-user-friends"></i>
+              <i :class="element.icon"></i>
             </div>
-            <h4>Human Capital</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis hic suscipit amet. Quasi, ipsum. Lorem, ipsum dolor.</p>
+            <h4>{{element.title}}</h4>
+            <p>{{element.description}}</p>
           </div>
         </div>
-        <div class="col-12 col-md-6 col-lg-4">
-          <div class="card">
-            <div class="icon-container align-self-start">
-              <i class="fas fa-chart-pie"></i>
-            </div>
-            <h4>Core Business</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur inventore minus nam nemo laboriosam commodi?</p>
-          </div>
-          </div>
-        <div class="col-12 col-md-6 col-lg-4">
-          <div class="card">
-            <div class="icon-container align-self-start">
-              <i class="fas fa-tachometer-alt"></i>
-            </div>
-            <h4>Performance</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quam ipsam id consequatur reiciendis nostrum!</p>
-          </div>
-        </div>
+        
       </div>
     </div>
   </section>
 </template>
 
 <script>
-
 export default {
   name : 'mainCharacteristic',
+  data : function(){
+    return {
+      cards :[
+        {
+          title : 'Human Capital',
+          description : 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis hic suscipit amet. Quasi, ipsum. Lorem, ipsum dolor.',
+          icon : 'fas fa-user-friends'
+        },
+        {
+          title : 'Core Business',
+          description : 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis hic suscipit amet. Quasi, ipsum. Lorem, ipsum dolor.',
+          icon : 'fas fa-chart-pie'
+        },
+        {
+          title : 'Performance',
+          description : 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis hic suscipit amet. Quasi, ipsum. Lorem, ipsum dolor.',
+          icon : 'fas fa-tachometer-alt'
+        }
+      ]
+    }
+  }
 }
 </script>
 
@@ -52,6 +56,9 @@ export default {
       border-radius: 10px;
       &:hover{
         transform: translateY(-10px);
+      }
+      h4{
+        padding-bottom: 16px;
       }
       .icon-container{
         border-radius: 50%;

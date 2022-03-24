@@ -68,7 +68,18 @@
         </div>
       </div>
     </div>
-    
+    <div class="post-footer">
+      <div class="container">
+        <div class="row py-4">
+          <div class="col-6">
+            <p class="sub-text">Enjoy the low price. We are tracking any intention of privacy</p>
+          </div>
+          <div class="col-6">
+            <p class="text-end sub-text">@2020 NEXGEN is Prodly Powered by <span>Codings</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
   </footer>
 </template>
 
@@ -99,6 +110,9 @@ export default {
           }
         }
       }
+    }
+    .post-footer{
+      background-color: #0D0D11;
     }
   }
 </style>
